@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -7,265 +6,261 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Leire Lasa Diaz</title>
-  
+
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-background:#f4f7fa;
-color:#333;
-line-height:1.6;
+    background:#f5f7fa;
+    color:#1f2937;
+    line-height:1.7;
 }
 
 header{
-background:#002147;
-color:white;
-padding:80px 20px;
-text-align:center;
+    background:#0f172a;
+    color:white;
+    padding:80px 10%;
 }
 
-header h1{
-font-size:3rem;
-margin-bottom:10px;
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
 }
 
-header p{
-font-size:1.2rem;
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-size:1.3rem;
+    font-weight:normal;
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
+
+.hero-text p{
+    margin-bottom:25px;
+}
+
+.hero-image img{
+    width:280px;
+    border-radius:20px;
+    box-shadow:0px 10px 25px rgba(0,0,0,.25);
+}
+
+.button{
+    display:inline-block;
+    margin-right:12px;
+    margin-bottom:10px;
+    background:white;
+    color:#0f172a;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 nav{
-background:white;
-position:sticky;
-top:0;
-padding:15px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-text-align:center;
+    position:sticky;
+    top:0;
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
 }
 
 nav a{
-margin:0 15px;
-text-decoration:none;
-color:#002147;
-font-weight:bold;
+    text-decoration:none;
+    color:#0f172a;
+    margin:0 15px;
+    font-weight:bold;
 }
 
 section{
-max-width:1000px;
-margin:auto;
-padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 25px;
 }
 
 h2{
-color:#002147;
-margin-bottom:20px;
+    color:#0f172a;
+    margin-bottom:25px;
+    font-size:2rem;
 }
 
 .card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0px 3px 10px rgba(0,0,0,0.08);
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
 }
 
-.project{
-margin-bottom:25px;
+.experience-item{
+    margin-bottom:20px;
 }
-  
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+
+.experience-item h3{
+    color:#0f172a;
+    margin-bottom:5px;
 }
 
 .project-card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-bottom:40px;
 }
 
-.project-card:hover{
-transform:translateY(-5px);
-}
-
-.project-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.project-content{
-padding:20px;
-}
-
-.project-content h3{
-margin-bottom:10px;
-color:#002147;
+.project-card h3{
+    margin-bottom:15px;
 }
 
 .image-gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:15px;
-margin-top:15px;
-margin-bottom:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:15px;
+    margin:20px 0;
 }
 
 .image-gallery a{
-background:#f7f7f7;
-border-radius:10px;
-padding:10px;
-display:flex;
-justify-content:center;
-align-items:center;
+    background:#f7f7f7;
+    border-radius:10px;
+    padding:10px;
 }
 
 .image-gallery img{
-width:100%;
-height:auto;
-max-height:300px;
-object-fit:contain;
-border-radius:8px;
-transition:0.3s;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    border-radius:8px;
+    transition:.3s;
 }
 
 .image-gallery img:hover{
-transform:scale(1.02);
-}
-  
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
+    transform:scale(1.02);
 }
 
-.skill{
-background:#002147;
-color:white;
-padding:10px 15px;
-border-radius:20px;
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-.resume-button{
-display:inline-block;
-padding:15px 25px;
-background:#002147;
-color:white;
-text-decoration:none;
-border-radius:8px;
+.skill-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.skill-card h3{
+    margin-bottom:10px;
+    color:#0f172a;
 }
 
 footer{
-background:#002147;
-color:white;
-text-align:center;
-padding:20px;
-}
-  
-.about-container{
-display:flex;
-align-items:flex-start;
-gap:40px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
-.about-text{
-flex:1;
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
 }
 
-.about-card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0px 3px 10px rgba(0,0,0,0.08);
+.hero-image img{
+    width:220px;
 }
 
-.portrait{
-width:280px;
-height:auto;
-border-radius:15px;
-box-shadow:0px 5px 15px rgba(0,0,0,0.15);
-flex-shrink:0;
 }
-  
+
 </style>
-
 </head>
 
 <body>
 
 <header>
 
+<div class="hero">
+
+<div class="hero-text">
+
 <h1>Leire Lasa Diaz</h1>
 
-<p>
-Mechanical Engineering Student | University of Toronto
-</p>
+<h2>Mechanical Engineering Student | University of Toronto</h2>
 
 <p>
-Biomedical Devices • Product Development • CAD Design • Manufacturing
+Interested in medical devices, rehabilitation technology, healthcare innovation, product development, and mechanical design.
 </p>
+
+<a href="resume.pdf" class="button">
+Resume
+</a>
+
+<a href="https://github.com/lasaleir" class="button">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/leire-lasa-b4a230217/" class="button">
+LinkedIn
+</a>
+
+</div>
+
+<div class="hero-image">
+<img src="images/portrait.png" alt="Portrait">
+</div>
+
+</div>
 
 </header>
 
 <nav>
-
 <a href="#about">About</a>
-
 <a href="#experience">Experience</a>
-
 <a href="#projects">Projects</a>
-
 <a href="#technical">Technical Experience</a>
-
 <a href="#skills">Skills</a>
-
-<a href="#resume">Resume</a>
-
 <a href="#contact">Contact</a>
-
 </nav>
 
 <section id="about">
 
 <h2>About Me</h2>
 
-<div class="about-card">
-
-<div class="about-container">
-
-<img src="images/portrait.png"
-     alt="Leire Lasa"
-     class="portrait">
-
-<div class="about-text">
+<div class="card">
 
 <p>
-Mechanical Engineering student at the University of Toronto with interests in biomedical devices, medical imaging systems, manufacturing, and product development.
+I am a Mechanical Engineering student at the University of Toronto with interests in biomedical devices, rehabilitation technologies, medical imaging systems, and product development.
 </p>
 
 <br>
 
 <p>
-My experiences span hospital equipment maintenance, CAD design, engineering operations, medical devices, robotics, and multidisciplinary product development.
+My experience spans medical equipment maintenance, engineering operations, CAD design, manufacturing, and multidisciplinary engineering projects through internships, design teams, and academic work.
 </p>
-
-<br>
-
-<p>
-I am particularly interested in the intersection of healthcare and engineering, with experience ranging from medical device development through UTBIOME to medical imaging service and maintenance in clinical environments.
-</p>
-
-</div>
-
-</div>
 
 </div>
 
@@ -277,29 +272,29 @@ I am particularly interested in the intersection of healthcare and engineering, 
 
 <div class="card">
 
+<div class="experience-item">
 <h3>Medical Imaging Service Intern</h3>
-
+<p><strong>Electronica Medica S.A.</strong> | May 2026 – Jul 2026</p>
 <p>
-Electronica Medica, S.A.
+Performed maintenance and troubleshooting on MRI, CT, mammography, ultrasound, X-ray, and patient monitoring systems.
 </p>
-
-<p>
-Performed maintenance and troubleshooting on ultrasound, mammography, X-ray, CT, MRI, and fetal monitoring systems while supporting hospital engineering operations.
-</p>
-
 </div>
 
-<div class="card">
-
+<div class="experience-item">
 <h3>Engineering Operations Intern</h3>
-
+<p><strong>Mantra Global Corporation</strong> | Jun 2025 – Aug 2025</p>
 <p>
-Mantra Global Corporation
+Reviewed engineering drawings, managed beam tracking systems, coordinated fabrication workflows, and supported project execution.
 </p>
+</div>
 
+<div class="experience-item">
+<h3>Mechanical Design Lead</h3>
+<p><strong>UTBIOME</strong> | Present</p>
 <p>
-Reviewed engineering drawings, managed beam tracking systems, coordinated fabrication workflows, and improved project organization across multiple construction projects.
+Leading the mechanical development of an ACL rehabilitation sleeve and contributing to wearable medical-device design.
 </p>
+</div>
 
 </div>
 
@@ -309,80 +304,58 @@ Reviewed engineering drawings, managed beam tracking systems, coordinated fabric
 
 <h2>Featured Projects</h2>
 
-<div class="card">
+<div class="project-card">
 
 <h3>7-DOF Robotic Cinematography Arm</h3>
 
 <div class="image-gallery">
 
-<a href="images/arm1.png" target="_blank">
-<img src="images/arm1.png">
-</a>
-
-<a href="images/arm3.png" target="_blank">
-<img src="images/arm3.png">
-</a>
-
-<a href="images/mech1.png" target="_blank">
-<img src="images/mech1.png">
-</a>
-
-<a href="images/mech2.png" target="_blank">
-<img src="images/mech2.png">
-</a>
-
-<a href="images/mech3.png" target="_blank">
-<img src="images/mech3.png">
-</a>
-
-<a href="images/mech4.png" target="_blank">
-<img src="images/mech4.png">
-</a>
+<a href="images/arm1.png"><img src="images/arm1.png"></a>
+<a href="images/arm2.png"><img src="images/arm2.png"></a>
+<a href="images/arm3.png"><img src="images/arm3.png"></a>
+<a href="images/mech1.png"><img src="images/mech1.png"></a>
+<a href="images/mech2.png"><img src="images/mech2.png"></a>
+<a href="images/mech3.png"><img src="images/mech3.png"></a>
+<a href="images/mech4.png"><img src="images/mech4.png"></a>
 
 </div>
 
 <p>
-Led a multidisciplinary team in the design of a robotic cinematography arm for hobbyist filmmaking. Developed CAD assemblies, transmission systems, motor selection analyses, torque calculations, and subsystem integration using SolidWorks.
+Led a four-person team in the design of a robotic cinematography arm. Performed subsystem integration, drivetrain design, motor selection, torque analysis, and CAD development using SolidWorks.
 </p>
 
 </div>
 
-<div class="card">
+<div class="project-card">
 
 <h3>Bright Light Therapy Watch</h3>
 
 <div class="image-gallery">
 
-<a href="images/blt.png" target="_blank">
-<img src="images/blt.png">
-</a>
-
-<a href="images/blt2.png" target="_blank">
-<img src="images/blt2.png">
-</a>
+<a href="images/blt.png"><img src="images/blt.png"></a>
+<a href="images/blt2.png"><img src="images/blt2.png"></a>
 
 </div>
 
 <p>
-Designed a wearable bright light therapy device intended to improve accessibility and usability of light-based treatment. Focused on user-centered product design, subsystem architecture, and biomedical applications.
+Developed a wearable bright light therapy concept focused on improving accessibility and usability of light-based treatment technologies.
 </p>
 
 </div>
 
-<div class="card">
+<div class="project-card">
 
-<h3>UTBIOME ACL Rehabilitation Knee Sleeve</h3>
+<h3>UTBIOME ACL Rehabilitation Sleeve</h3>
 
 <div class="image-gallery">
 
-<a href="images/sleeve.png" target="_blank">
-<img src="images/sleeve.png">
-</a>
+<a href="images/sleeve.png"><img src="images/sleeve.png"></a>
+<a href="images/utbiome.png"><img src="images/utbiome.png"></a>
 
 </div>
 
 <p>
-Mechanical Design Lead for UTBIOME developing a rehabilitation sleeve for ACL recovery. Conducted CAD development, wearable-device design, medical-device trade studies, and rehabilitation-focused product development.
+Mechanical Design Lead for a wearable rehabilitation device focused on ACL recovery through biomechanical support and integrated monitoring technologies.
 </p>
 
 </div>
@@ -393,29 +366,27 @@ Mechanical Design Lead for UTBIOME developing a rehabilitation sleeve for ACL re
 
 <h2>Technical Experience</h2>
 
-<div class="card">
+<div class="project-card">
 
 <h3>Mechanical Design Coursework</h3>
 
 <div class="image-gallery">
 
 <img src="images/screwdriver.png">
-
 <img src="images/jigsaw.png">
-
 <img src="images/smech.png">
 
 </div>
 
 <p>
-Completed advanced SolidWorks projects involving reverse engineering, mechanism modeling, parametric CAD development, engineering drawings, exploded assemblies, and design documentation.
+Reverse engineering, CAD modeling, mechanism design, engineering drawings, and SolidWorks assembly development.
 </p>
 
 </div>
 
-<div class="card">
+<div class="project-card">
 
-<h3>Conventional Machining Program</h3>
+<h3>Machining Experience</h3>
 
 <div class="image-gallery">
 
@@ -424,22 +395,47 @@ Completed advanced SolidWorks projects involving reverse engineering, mechanism 
 </div>
 
 <p>
-Manufactured mechanical components from raw stock using lathes, milling machines, drill presses, grinders, and precision measurement equipment while developing practical manufacturing experience.
+Conventional machining using mills, lathes, grinders, drill presses, and precision measurement tools.
 </p>
 
 </div>
 
 </section>
-  
-<section id="resume">
 
-<h2>Resume</h2>
+<section id="skills">
 
-<a class="resume-button" href="resume.pdf">
+<h2>Skills</h2>
 
-Download Resume
+<div class="skills-grid">
 
-</a>
+<div class="skill-card">
+<h3>CAD & Simulation</h3>
+SolidWorks (CSWA)<br>
+ANSYS<br>
+LTspice
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+Python<br>
+MATLAB
+</div>
+
+<div class="skill-card">
+<h3>Manufacturing</h3>
+Machining<br>
+Additive Manufacturing<br>
+Engineering Drawings
+</div>
+
+<div class="skill-card">
+<h3>Engineering</h3>
+DFM/DFA<br>
+Root Cause Analysis<br>
+BOM Development
+</div>
+
+</div>
 
 </section>
 
@@ -450,23 +446,16 @@ Download Resume
 <div class="card">
 
 <p>Email: leire.lasa@mail.utoronto.ca</p>
-
-<p>LinkedIn: www.linkedin.com/in/leire-lasa-b4a230217
-
-</p>
-
-<p>GitHub: https://github.com/lasaleir</p>
+<p>GitHub: github.com/lasaleir</p>
+<p>LinkedIn: linkedin.com/in/leire-lasa-b4a230217</p>
 
 </div>
 
 </section>
 
 <footer>
-
-<p>© 2026 Leire Lasa Diaz</p>
-
+© 2026 Leire Lasa Diaz
 </footer>
 
 </body>
-
 </html>
