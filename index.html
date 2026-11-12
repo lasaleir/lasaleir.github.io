@@ -170,18 +170,29 @@ text-align:center;
 padding:20px;
 }
   
-  .about-container{
+.about-container{
 display:flex;
-align-items:center;
+align-items:flex-start;
 gap:40px;
-flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.08);
 }
 
 .portrait{
-width:250px;
+width:280px;
 height:auto;
 border-radius:15px;
 box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+flex-shrink:0;
 }
   
 </style>
@@ -226,24 +237,10 @@ Biomedical Devices • Product Development • CAD Design • Manufacturing
 
 <h2>About Me</h2>
 
-<div class="about-container">
-
-<img src="images/portrait.png"
-     alt="Leire Lasa"
-     class="portrait">
-
-<div>
-
-<p>
-Mechanical Engineering student at the University of Toronto with interests in biomedical devices, medical imaging systems, manufacturing, and product development.
-</p>
-
-<p>
-My experiences span hospital equipment maintenance, CAD design, engineering operations, medical devices, robotics, and multidisciplinary product development.
-</p>
-
-</div>
-
+<div class="about-card">
+    <div class="about-container">
+        ...
+    </div>
 </div>
 
 </section>
