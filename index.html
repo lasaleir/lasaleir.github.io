@@ -121,6 +121,65 @@ h2{
     margin-bottom:5px;
 }
 
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:25px;
+}
+
+.small-project{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.small-project img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#f7f7f7;
+border-radius:10px;
+padding:10px;
+}
+
+.small-project h3{
+margin-top:15px;
+margin-bottom:10px;
+}
+    
+.small-project-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:25px;
+}
+
+.small-project{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.small-project img{
+width:100%;
+height:250px;
+object-fit:contain;
+background:#f7f7f7;
+border-radius:10px;
+padding:10px;
+margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.small-project-grid{
+grid-template-columns:1fr;
+}
+
+}
+
 .project-card{
     background:white;
     padding:30px;
@@ -158,6 +217,38 @@ h2{
     transform:scale(1.02);
 }
 
+    .tech-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:25px;
+}
+
+.tech-media{
+width:100%;
+height:250px;
+object-fit:contain;
+background:#f7f7f7;
+border-radius:10px;
+padding:10px;
+margin-bottom:15px;
+}
+
+.tech-video{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+background:#f7f7f7;
+}
+
+@media(max-width:900px){
+
+.tech-row{
+grid-template-columns:1fr;
+}
+
+}
+    
 .skills-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -322,37 +413,31 @@ Led a four-person team in the design of a robotic cinematography arm. Performed 
 
 </div>
 
-<div class="project-card">
+<div class="small-project-grid">
+
+<div class="small-project">
 
 <h3>Bright Light Therapy Watch</h3>
 
-<div class="image-gallery">
-
-<a href="images/blt.png"><img src="images/blt.png"></a>
-<a href="images/blt2.png"><img src="images/blt2.png"></a>
-
-</div>
+<img src="images/blt.png">
 
 <p>
-Developed a wearable bright light therapy concept focused on improving accessibility and usability of light-based treatment technologies.
+Lead a five-person team in the development of a wearable bright light therapy concept focused on improving treatment adhesion of light-based depression treatment technologies for adolescents and young adults.
 </p>
 
 </div>
 
-<div class="project-card">
+<div class="small-project">
 
 <h3>UTBIOME ACL Rehabilitation Sleeve</h3>
 
-<div class="image-gallery">
-
-<a href="images/sleeve.png"><img src="images/sleeve.png"></a>
-<a href="images/utbiome.png"><img src="images/utbiome.png"></a>
-
-</div>
+<img src="images/sleeve.png">
 
 <p>
-Mechanical Design Lead for a wearable rehabilitation device focused on ACL recovery through biomechanical support and integrated monitoring technologies.
+Mechanical Design member for a wearable rehabilitation device focused on ACL recovery through biomechanical support and integrated monitoring technologies.
 </p>
+
+</div>
 
 </div>
 
@@ -362,37 +447,55 @@ Mechanical Design Lead for a wearable rehabilitation device focused on ACL recov
 
 <h2>Technical Experience</h2>
 
-<div class="project-card">
+<div class="card">
 
 <h3>Mechanical Design Coursework</h3>
 
 <div class="image-gallery">
 
 <img src="images/screwdriver.png">
-<img src="images/jigsaw.png">
+
 <img src="images/smech.png">
 
-</div>
-
-<p>
-Reverse engineering, CAD modeling, mechanism design, engineering drawings, and SolidWorks assembly development.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Machining Experience</h3>
-
-<div class="image-gallery">
-
-<img src="images/piston.png">
+<img src="images/jigsaw.png">
 
 </div>
 
 <p>
-Conventional machining using mills, lathes, grinders, drill presses, and precision measurement tools.
+Completed advanced SolidWorks projects involving reverse engineering, mechanism modeling, parametric CAD development, engineering drawings, exploded assemblies, and design documentation.
 </p>
+
+</div>
+
+<div class="tech-row">
+
+<div class="card">
+
+<h3>Manufacturing Experience</h3>
+
+<img src="images/piston.png" class="tech-media">
+
+<p>
+Produced precision components using lathes, milling machines, grinders, drill presses, and precision measurement tools through a conventional machining program.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Motion Study Analysis</h3>
+
+<video controls class="tech-video">
+
+<source src="images/motion-study.mp4" type="video/mp4">
+
+</video>
+
+<p>
+Created SolidWorks Motion Manager studies to visualize mechanism kinematics, evaluate motion paths, and analyze assembly behavior.
+</p>
+
+</div>
 
 </div>
 
