@@ -113,23 +113,32 @@ color:#002147;
 
 .image-gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:12px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:15px;
 margin-top:15px;
 margin-bottom:15px;
 }
 
+.image-gallery a{
+background:#f7f7f7;
+border-radius:10px;
+padding:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
 .image-gallery img{
 width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px;
+height:auto;
+max-height:300px;
+object-fit:contain;
+border-radius:8px;
 transition:0.3s;
-cursor:pointer;
 }
 
 .image-gallery img:hover{
-transform:scale(1.03);
+transform:scale(1.02);
 }
   
 .skills{
@@ -287,10 +296,6 @@ Reviewed engineering drawings, managed beam tracking systems, coordinated fabric
 <img src="images/arm1.png">
 </a>
 
-<a href="images/arm2.png" target="_blank">
-<img src="images/arm2.png">
-</a>
-
 <a href="images/arm3.png" target="_blank">
 <img src="images/arm3.png">
 </a>
@@ -351,10 +356,6 @@ Designed a wearable bright light therapy device intended to improve accessibilit
 <img src="images/sleeve.png">
 </a>
 
-<a href="images/utbiome.png" target="_blank">
-<img src="images/utbiome.png">
-</a>
-
 </div>
 
 <p>
@@ -394,8 +395,6 @@ Completed advanced SolidWorks projects involving reverse engineering, mechanism 
 <h3>Conventional Machining Program</h3>
 
 <div class="image-gallery">
-
-<img src="images/lathe.png">
 
 <img src="images/piston.png">
 
