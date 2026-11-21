@@ -17,8 +17,8 @@
 }
 
 body{
-    background:#f5f7fa;
-    color:#1f2937;
+    background:#0f172a;
+    color:#e2e8f0;
     line-height:1.7;
 }
 
@@ -78,16 +78,16 @@ header{
 nav{
     position:sticky;
     top:0;
-    background:white;
+    background:#111827;
     padding:15px;
     text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    box-shadow:0 2px 10px rgba(0,0,0,.4);
     z-index:1000;
 }
 
 nav a{
     text-decoration:none;
-    color:#0f172a;
+    color:#e2e8f0;
     margin:0 15px;
     font-weight:bold;
 }
@@ -99,16 +99,20 @@ section{
 }
 
 h2{
-    color:#0f172a;
+    color:#60a5fa;
     margin-bottom:25px;
     font-size:2rem;
 }
 
+}
+
 .card{
-    background:white;
+    {
+    background:#1e293b;
+    color:#e2e8f0;
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
     padding:30px;
     border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
     margin-bottom:30px;
 }
 
@@ -128,10 +132,11 @@ gap:25px;
 }
 
 .small-project{
-background:white;
+background:#334155;
+color:#f8fafc;
+box-shadow:0 6px 20px rgba(0,0,0,.4);
 padding:20px;
 border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .small-project img{
@@ -181,11 +186,14 @@ grid-template-columns:1fr;
 }
 
 .project-card{
-    background:white;
+    background:#1e293b;
+    color:#f8fafc    
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
     padding:30px;
     border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
     margin-bottom:40px;
+    border-left:4px solid #60a5fa;
+
 }
 
 .project-card h3{
@@ -200,7 +208,7 @@ grid-template-columns:1fr;
 }
 
 .image-gallery a{
-    background:#f7f7f7;
+    background:#334155;
     border-radius:10px;
     padding:10px;
     display:flex;
@@ -232,7 +240,7 @@ margin-top:25px;
 width:100%;
 height:250px;
 object-fit:contain;
-background:#f7f7f7;
+background:#334155;
 border-radius:10px;
 padding:10px;
 margin-bottom:15px;
@@ -242,7 +250,7 @@ margin-bottom:15px;
 width:100%;
 border-radius:10px;
 margin-bottom:15px;
-background:#f7f7f7;
+background:#334155;
 }
 
 @media(max-width:900px){
@@ -260,15 +268,25 @@ grid-template-columns:1fr;
 }
 
 .skill-card{
-    background:white;
+    background:#1e293b;
+    color:#f8fafc;
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
     padding:20px;
     border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-left:4px solid #22c55e;
+
 }
 
 .skill-card h3{
     margin-bottom:10px;
     color:#0f172a;
+}
+
+.project-card:hover,
+.small-project:hover,
+.skill-card:hover{
+    transform:translateY(-4px);
+    transition:.25s;
 }
 
 footer{
@@ -416,6 +434,8 @@ As Mechanical Lead for UTBIOME, I led the design and development of a home-use e
 
 <p>
 To accelerate development, I reverse engineered the pump system and pneumatic architecture of a commercial automated blood pressure monitor and recreated the assembly in SolidWorks for design analysis and prototyping. This work informed custom mechanical layouts
+</div>
+    
 <section id="technical">
 
 <h2>Technical Experience</h2>
